@@ -1,14 +1,15 @@
 import tkinter as tk
+from gpt4all import GPT4All
+
+model = GPT4All("wizardlm-13b-v1.1-superhot-8k.ggmlv3.q4_0.bin") # device='amd', device='intel'
 
 
 def send_message():
     user_message = user_input.get()
     if user_message:
         add_message("User:", user_message)
-        # Here, you would typically send the user's message to a language model
-        # and receive a response.
-        # For this example, we'll just simulate a response.
-        add_message("ChatGPT:", "This is a sample response.")
+        output = model.generate(user_message, max_tokens=1000)
+        add_message("ChatGPT:", output)
 
 
 def add_message(sender, message):
