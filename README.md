@@ -1,2 +1,0 @@
-# Exhibition
-The one
