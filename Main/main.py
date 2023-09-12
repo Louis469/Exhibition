@@ -22,7 +22,7 @@ def add_message(sender, message):
 
 # Create the main window
 root = tk.Tk()
-root.title("ChatGPT Chat")
+root.title("ZAK")
 
 # Create a text widget to display the chat messages
 chat_text = tk.Text(root, state=tk.DISABLED)
