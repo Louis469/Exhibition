@@ -1,7 +1,7 @@
 import tkinter as tk
 from gpt4all import GPT4All
 
-model = GPT4All("wizardlm-13b-v1.1-superhot-8k.ggmlv3.q4_0.bin") # device='amd', device='intel'
+model = GPT4All("llama-2-7b-chat.ggmlv3.q4_0.bin") # device='amd', device='intel'
 
 
 def send_message():
